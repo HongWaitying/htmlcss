@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>作业四</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }    
+        body{
+            background-color: #20202c;
+        }
+        .sun{
+            position: relative;
+            margin-top: 200px;
+            width: 100px;
+            height: 100px;
+            background-color: #ff0;
+            border-radius: 50%;
+            box-shadow: 0 0 25px 0 white;
+            margin-left: auto;
+            margin-right: auto;
+            animation: banner 10s linear infinite;
+        }
+        .guidao{
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border-left: 2px solid #20202c;
+            border-bottom: 2px solid #a0a0a6;
+        }
+        .earth{
+            position: absolute;
+            top: 230px;
+            left: 20px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #00fefe;
+            animation: banner 3s linear infinite;
+        }
+        .small-guidao{
+            position: absolute;
+            top: -25px;
+            left: -25px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: none;
+            border-bottom: 1px solid white;
+            border-left: 1px solid transparent;
+        }
+        .moon{
+            position: absolute;
+            top: 60px;
+            left: 4px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #d5d5d5;
+        }
+        @keyframes banner{
+            0%{
+                transform: rotateZ(0deg);
+            }
+            100%{
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+    <div class="sun">
+        <div class="guidao">
+            <div class="earth">
+                <div class="small-guidao">
+                    <div class="moon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

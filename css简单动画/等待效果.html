@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>作业二</title>
+</head>
+<body>
+    <style>
+        .big{
+            width: 400px;
+            margin-top: 100px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .big b{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px 30px;
+            
+        }
+        .big b:nth-child(1){
+            background-color: #4695b8;
+            box-shadow: 0 0 0 20px rgba(177,210,225,1);
+            animation: banner 1.8s linear infinite;
+        }
+        .big b:nth-child(2){
+            background-color: #67a142;
+            box-shadow: 0 0 0 20px rgba(179, 208, 160, 1);
+            animation: banner1 1.8s linear infinite;
+            animation-delay: .3s;
+        }
+        .big b:nth-child(3){
+            background-color: #8fc0a7;
+            box-shadow: 0 0 0 20px rgba(205, 227, 215, 1);
+            animation: banner2 1.8s linear infinite;
+            animation-delay: .6s;
+        }
+        @keyframes banner{
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.2);
+                box-shadow: 0 0 0 20px rgba(177,210,225,0.3);
+            }
+            100% {
+                transform: scale(0);
+
+            }
+        }
+        @keyframes banner1{
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.2);
+                box-shadow: 0 0 0 20px rgba(179, 208, 160, .4);
+            }
+            100% {
+                transform: scale(0);
+
+            }
+        }
+        @keyframes banner2{
+            0% {
+                transform: scale(0);
+            }
+            50% {
+                transform: scale(1.2);
+                box-shadow: 0 0 0 20px rgba(205, 227, 215, .3);
+            }
+            100% {
+                transform: scale(0);
+
+            }
+        }
+
+    </style>
+    <div class="big">
+        <b></b>
+        <b></b>
+        <b></b>
+    </div>
+</body>
+</html>
