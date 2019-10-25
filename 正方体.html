@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            position: fixed;
+            width: 300px;
+            height: 300px;
+            left: 200px;
+            top: 80px;
+            /* border: 2px solid purple; */
+            transform: perspective(2000px) rotateY(-30deg);
+            transform-style: preserve-3d;
+            animation: banner 10s linear infinite;
+        }
+        .box p{
+            position: absolute;
+            width: 100%;
+            line-height: 300px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .box .a{
+            background-color: red;
+            transform:translate3d(0,0,150px) rotateY(0deg);
+            
+        }
+        .box .b{
+            background-color: green;
+            transform: translate3d(150px,0,0) rotateY(90deg);
+        }
+        .box .c{
+            background-color: blue;
+            transform: translate3d(0,0,-150px) rotateY(180deg);
+        }
+        .box .d{
+            background-color: purple;
+            transform: translate3d(-150px,0,0) rotateY(-90deg);
+        }
+        .box .e{
+            background-color: yellow;
+            transform: translate3d(0,150px,0) rotateX(-90deg);
+        }
+        .box .f{
+            background-color: aqua;
+            transform: translate3d(0,-150px,0) rotateX(90deg);
+        }
+        @keyframes banner{
+            0%{
+                transform: rotateX(0deg) rotateY(0deg) ;
+            }
+            50%{
+                transform: rotateX(0deg) rotateY(-360deg);
+            }
+            100%{
+                transform: rotateX(-360deg) rotateY(-360deg);
+            }
+        }
+    </style>
+    <div class="box">
+        <p class="a">1</p>
+        <p class="b">2</p>
+        <p class="c">3</p>
+        <p class="d">4</p>
+        <p class="e">5</p>
+        <p class="f">6</p>
+    </div>
+</body>
+</html>
